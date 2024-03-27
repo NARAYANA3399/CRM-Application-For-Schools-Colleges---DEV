@@ -1,34 +1,44 @@
 Name of the Student :NADELLA LAKSHMINARAYANA
-Learning Track      :Salesforce (Developer)
+Learning Track      :Salesforce-(Developer)
 Project Name        :CRM Application For Schools/Colleges-(Dev)
 Trailhead Profile   :
 Developer Org Usernme  :
-Developer Org Password :
+Developer Org Password :Zipcode@9900
 Position               :Team Lead
 
 
-Name of the Student :
-Learning Track      :Salesforce (Developer)
+Name of the Student :MARRI SASI KUMAR
+Learning Track      :Salesforce-(Developer)
 Project Name        :CRM Application For Schools/Colleges-(Dev)
 Trailhead Profile   :
 Developer Org Usernme  :
-Developer Org Password :
-Position               :Member
+Developer Org Password :Gayatri@123
+Position               :Team Member
 
 
-Name of the Student :
-Learning Track      :Salesforce (Developer)
+Name of the Student :SANJEEVIGARI VAMSI
+Learning Track      :Salesforce-(Developer)
 Project Name        :CRM Application For Schools/Colleges-(Dev)
 Trailhead Profile   :
 Developer Org Usernme  :
-Developer Org Password :
-Position               :Member
+Developer Org Password :Gayatri@123
+Position               :Team Member
 
 
-Name of the Student :
-Learning Track      :Salesforce (Developer)
+Name of the Student :SANKINENI RAJESH
+Learning Track      :Salesforce-(Developer)
 Project Name        :CRM Application For Schools/Colleges-(Dev)
 Trailhead Profile   :
 Developer Org Usernme  :
-Developer Org Password :
-Position               :Member
+Developer Org Password :Gayatri@123
+Position               :Team Member
+
+
+Name of the Student :KUMMARI SREENIVASULU
+Learning Track      :Salesforce-(Developer)
+Project Name        :CRM Application For Schools/Colleges-(Dev)
+Trailhead Profile   :
+Developer Org Usernme  :
+Developer Org Password :Gayatri@123
+Position               :Team Member
+

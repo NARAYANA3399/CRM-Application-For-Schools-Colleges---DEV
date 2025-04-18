@@ -1,1 +1,280 @@
+NADELLA LAKSHMINARAYANA - CRM Application That helps to Book a Visa Slot - Developer - (Short-term)
+Project Report on
+CRM Application That Helps To Book a Visa Slot - Developer - (Short-Term)
+Introduction: A visa slot management project is a system that is used to track and manage the availability of visa slots, which are appointments that are required for certain visa applications. It might be used by a government agency or a visa processing center to schedule and manage appointments with applicants.
+Milestone – 01: Create a Developer Org
+Go to developers.salesforce.com/
+        Click on sign up.
+        On the sign up form, enter the following details:
+1.	First name & Last name – NADELLA LAKSHMINARAYANA
+2.	Email – nadiendilalakshminarayana@gmail.com
+3.	Role : Developer
+4.	Company : GAYATRI DEGREE COLLEGE - TIRUPATI
+5.	County : India
+6.	Postal Code : 517501
+7.	Username : 
+ 
+Account Activation
+Go to the inbox of the email that you used while signing up. Click on the verify account to activate your account. The email may take 5-10mins, as
+ 
+Login to Your Salesforce Account
+1.	Go to salesforce.com and click on login.
+2.	Enter the username and password that you just created. 
+3.	After login this is the home page which you will see.
+ 
 
+
+
+
+
+
+Milestone – 02: Creation of Objects
+Object – Passport:
+1.	Click on the gear icon and then select Setup
+2.	Click on the object manager tab just beside the home tab
+3.	After the above steps, have a look on the extreme right you will find a Create Dropdown click on that and select Custom Object
+4.	On the Custom Object Definition page, create the object as follows:
+5.	Label: Passport
+6.	Plural Label: Passports
+7.	Record Name: Passport Number
+8.	Check the Allow Reports checkbox
+9.	Check the Allow Search checkbox
+10.	Click Save
+Object-Visa Slot:
+1.	Click on the gear icon and then select Setup.
+2.	Click on the object manager tab just beside the home tab.
+3.	After the above steps, have a look on the extreme right you will find a Create Drop down click on that and select Custom Object
+4.	On the Custom Object Definition page, create the object as follows:
+5.	Label: Visa Slot
+6.	Plural Label: Visa Slots
+7.	Record Name: Visa Slot Number(Auto Number)
+Object-Payment:
+1.	Click on the gear icon and then select Setup. Click on the object manager tab just beside the home tab.
+2.	After the above steps, have a look on the extreme right you will find a Create Drop down click on that and select Custom Object.
+3.	On the Custom Object Definition page, create the object as follows:
+4.	Label: Payment
+5.	Plural Label: Payments
+6.	Record Name: Transaction Id (Auto Number)
+7.	Check the Allow Reports check box
+8.	Check the Allow Search check box
+9.	Click Save.
+ 
+  Milestone – 03: Relationship Creation
+1.	 Fields Creation: Passport Number
+2.	Navigate to setup
+3.	Click on Object Manager and search and select Visa Slot object
+4.	Select Fields & Relations and click New.
+5.	Select Data Type: Master-Detail, next.
+6.	Related to: Passport, next.
+7.	Label: Passport Number
+8.	Child Relationship Name: Visa Slot, next.
+9.	Next, next and save.
+ 
+    Milestone – 04: Field Creation
+      Field - Full Name:
+1.	Navigate to Setup
+2.	Click the Object Manager next to Home Tab
+3.	Type Passport in Quick Find and Select it
+4.	Click on Fields and Relationships
+5.	Click New
+6.	Select Data Type: Text, click on next
+7.	Field Label: Full Name
+8.	Length: Max 80
+9.	Check always requires a value to save this record
+10.	Click next
+11.	Next, Save or Save & New (if further new field will be create)
+     Field- Contact Number:
+1.	Navigate to Setup
+2.	Click the Object Manager next to Home Tab
+3.	Type Passport in Quick Find and Select it
+4.	Click on Fields and Relationships
+5.	Click New
+6.	Select Data Type: Number, click on next
+7.	Field Label: Contact Number
+8.	Length: 10 and Decimal 0, click on next
+9.	Next, Save.
+     Field- Permanent Address:
+1.	Navigate to Setup
+2.	Click the Object Manager next to Home Tab
+3.	Type Passport in Quick Find and Select it
+4.	Click on Fields and Relationships
+5.	Click New
+6.	Select Data Type: Text Area, click on next
+7.	Field Label: Permanent Address
+8.	Next, next and save
+ 
+   Fields Available On Custom Object: Visa Slot
+             Field Label                 Object
+Slot Field Name	   Data Type
+Location	               Text 
+Time	                            Date & Time
+Visa Slot Number            Auto Number (Use in Record Name) 
+Passport Number	    Master-Detail
+Status	                              Picklist
+    Fields-Status
+1.	Click on Object Manager, search and select Visa Slot
+2.	Click Fields & Relatioships and click on new.
+3.	Chose on picklist, next.
+4.	Label: Status
+5.	NOTE- select enter value, with each value separated by new line
+6.	Values: Approved
+7.	Cancel Reschedule
+8.	Next, next and save.
+ 
+   Field Available On Custom Object: Payment
+ Field Name	                 	Data Type
+Payment Mode                	Picklist (Values- Debit Card, Credit Card) 
+Card Number	                	Number
+Transaction Id                	Auto Number (Used in Record Name)
+Visa Slot Number          	Master-Detail
+Cancel Transaction        	Text
+  
+ 
+   Milestone – 04: Creation Of App
+1.	Click on setup and go to home page.
+2.	In Quick Find Box search and select App Manager.
+3.	Click: New Lightning App.
+4.	App Name: Book My Visa and click on next.
+5.	Navigate System: Standard Navigation Support Form Factor: Desktop and Phone Click next, next
+6.	Move Objects from available items to selected items. (Passport, Visa Slot, Payment).
+7.	Add System Administrator profile, available profile to selected profile.
+8.	Save & Finish
+
+
+ 
+Milestone – 04: Creation Of User
+1.	Navigate to setup
+2.	In Quick Find box select and search: User
+3.	Click: New user
+4.	Give First and Last Name
+5.	Enter your email in the email field
+6.	Enter user name, it must be unique
+7.	User license: salesforce platform
+8.	In the profile field: Standard user profile
+9.	Check, Generate new password and notify user immediately
+ 
+App Organization Wide Defaults Settings
+1.	Steps of OWD settings:
+2.	Navigate setup in Quick Find search bar
+3.	Type Sharing Setting and Select it.
+4.	Edit: Organization Wide Defaults.
+5.	Scroll down list and select Passport object and change the default external Access to Public Read/Write.
+6.	Save. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Milestone – 05: User Adoption
+   Create Record- Passport:
+1.	Click on App Launcher on left side of screen.
+2.	Search Book My Visa App & click on it.
+3.	Click on Passport tab.
+4.	Click new button
+5.	Fill all Passport record details.
+6.	Click on Save Button. 
+   View Record- Passport:
+1.	 Click on App Launcher on left side of screen.
+2.	Search Book My Visa & click on it.
+3.	Click on Passport Tab.
+4.	Click on any record name. you can see the details of the Driver  
+   
+View Delete Records- Passport:
+1.	 Click on App Launcher on left side of screen.
+2.	Search Book My Visa & click on it.
+3.	Click on Passport Tab.
+4.	Click on Arrow at right hand side on that Particular record.
+5.	Click delete and delete again.  
+Milestone – 06: What Are Reports?
+   Creation Of Report
+1.	Click on App Launcher left side on the screen, Search and select: Report
+2.	Click Report- select New Report
+3.	Select Report Type: Passport with Visa Slot Number
+4.	Click on Start Report button
+5.	Below the Outline pane- In the Group Row select: Location
+6.	In Group Column select- Passport: Passport Number
+7.	In Column select: Visa Slot Number
+8.	Now navigate to Filter pane available next to Outline pane And ensure in the show me section: All Passport is selected
+9.	In Passport Created date: All Time.
+10.	Give the Label: Passport with Visa Location
+11.	Save & Run for saving the Report, Save.  
+    View Report:
+1.	Click on App Launcher on left side of screen.
+2.	Search Book My Visa App & click on it.
+3.	Click on Reports Tab.
+4.	Click on Passport with Visa Location and see reports.  
+
+
+Milestone – 06: Dashboards
+    Creation Of Dashboard
+1.	Click on the App launcher left on screen and search for dashboards.
+2.	Select New Dashboard
+3.	Name the Dashboard: Passport With Visa Location
+4.	Select Create option
+5.	Click on Add Component
+6.	Select Passport with Visa Locations
+7.	Click Select
+8.	Select the Donut Chart to display a section
+9.	Value: Record count
+10.	Sliced By: Location
+11.	Leave the default values
+12.	Click on Add
+13.	Save the Dashboard and Done  
+    View Dashboard:
+1.	Click on App Launcher on left side of screen.
+2.	Search Book My Visa & click on it.
+3.	Click on Dashboard Tab.
+4.	Click on Passport with Visa Location see graph view of records
+Milestone – 07: Apex Triggers
+1.	 Write A Trigger-1: Click on Set up Gear at drop down list you can find developer console click on that.
+2.	At the left side top you can find the option new click on that and then apex trigger.
+3.	Give the name as Deletionofvisarecord
+4.	And S object has Visa Object
+5.	Scenario - You cannot delete active visa record
+                   trigger Deletionifvisarecord on Visa_Slot__c (before delete) {
+    List<Visa_Slot__c> ApprovedVisa = [SELECT Id, Status__c FROM Visa_Slot__c WHERE Id IN :Trigger.old AND                 Status__c = 'Approved'];
+      for (Visa_Slot__c Visa : ApprovedVisa) {
+        Visa.addError('Cannot delete an active Visa.');
+    }
+}
+
+   Write A Trigger-2:
+
+1.	Click on Set up Gear at drop down list you can find developer console click on that.
+2.	At the left side top you can find the option new click on that and then apex trigger.
+3.	Give the name as AvoidDuplicatePassport
+4.	And S object has Passport Object
+5.	Scenario - trigger on the Passport__c object to avoid duplicate records based on the Full Name and Contact Number fields.
+                   trigger AvoidDuplicatePassports on Passport__c (before insert, before update) {
+                 Set<String> uniqueKeys = new Set<String>();
+            List<Passport__c> duplicatePassports = new List<Passport__c>();  
+         for (Passport__c passport : Trigger.new) {
+         String key = passport.Full_Name__c + '_' + passport.Contact_Number__c;
+        if (uniqueKeys.contains(key)) {
+            duplicatePassports.add(passport);
+        } else {
+            uniqueKeys.add(key);
+        }
+    }
+    for (Passport__c passport : duplicatePassports) {
+        passport.addError('Duplicate record found based on Full Name and Contact Number.');
+    }
+}
+
+
+
+
+
+
+
+
+The End
